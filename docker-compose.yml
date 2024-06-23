@@ -1,0 +1,61 @@
+version: '3.8'
+services:
+
+    mongodb:
+        image: "mongo"
+        ports:
+          - "27017:27017"
+        environment:
+           MONGO_INITDB_DATABASE: Cluster0
+           MONGO_INITDB_ROOT_USERNAME: manarbakari
+           MONGO_INITDB_ROOT_PASSWORD: manar1234
+ 
+        volumes:
+          - data:/data/db
+        networks:
+          - mern_app 
+
+    backend:
+     build: ./server
+     ports:
+       - "5001:5001"
+     volumes:
+       - "./server/:/app"
+     networks:
+          - mern_app
+     depends_on:
+       - mongodb
+     env_file:
+       - /server/.env
+
+    frontend:
+      build: ./client
+      ports:
+          - "3000:3000"
+      volumes:
+       - "./client/:/src:/app/src"
+      stdin_open: true
+      tty: true
+      networks:
+          - mern_app
+      depends_on:
+       - backend
+    nginx:
+      image: nginx:latest
+      volumes:
+         - ./nginx.conf:/app/nginx/nginx.conf
+      ports:
+         - '80:80'
+      depends_on:
+        - frontend
+        - backend
+volumes:
+  data:
+    driver: local
+  logs:
+networks:
+    mern_app:
+      driver: bridge
+
+
+  

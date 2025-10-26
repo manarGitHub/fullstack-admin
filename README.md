@@ -9,12 +9,14 @@ It serves as an administration dashboard, allowing users to manage, monitor, and
 🧩 Tech Stack
 
 Frontend
+
 React.js
 Redux / Context API (if used)
 Axios
 TailwindCSS / Material UI / Bootstrap
 
 Backend
+
 Node.js
 Express.js
 MongoDB (Mongoose ODM)
@@ -26,16 +28,23 @@ MongoDB in Docker container
 ⚙️ Features
 
 ✅ Secure authentication (JWT-based login & register)
+
 ✅ CRUD operations (Create, Read, Update, Delete)
+
 ✅ RESTful API backend
+
 ✅ Responsive dashboard interface
+
 ✅ Dockerized microservices for easy deployment
+
 ✅ Environment configuration support (.env)
 
 🧑‍💻 Author
 
 👩‍💻 Manar Bakari
+
 Cloud & DevOps Enthusiast | Fullstack Developer
-📧 [manabakari18@gmail.com
-]
+
+📧 [manabakari18@gmail.com]
+
 🌐 LinkedIn Profile: www.linkedin.com/in/bakari-manar

@@ -1,4 +1,5 @@
 🏗️ MERN Stack Web Application – Administration Dashboard
+
 🚀 Overview
 
 This project is a Full-Stack Web Application built with the MERN Stack (MongoDB, Express.js, React, Node.js) and Docker for containerized deployment.
@@ -8,21 +9,22 @@ It serves as an administration dashboard, allowing users to manage, monitor, and
 
 🧩 Tech Stack
 
-Frontend
+Frontend :
 
-React.js
-Redux / Context API (if used)
-Axios
-TailwindCSS / Material UI / Bootstrap
+React.js &
+Redux / Context API (if used) &
+Axios &
+TailwindCSS / Material UI / Bootstrap &
 
-Backend
+Backend :
 
-Node.js
-Express.js
-MongoDB (Mongoose ODM)
-DevOps / Deployment
-Docker & Docker Compose
-Nginx (optional reverse proxy)
+Node.js &
+Express.js &
+MongoDB (Mongoose ODM) &
+
+DevOps / Deployment:
+Docker & Docker Compose &
+Nginx (optional reverse proxy) &
 MongoDB in Docker container
 
 ⚙️ Features
